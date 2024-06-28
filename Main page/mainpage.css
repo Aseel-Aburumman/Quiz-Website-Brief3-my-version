@@ -1,0 +1,278 @@
+General styles
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --bg-color: #ffffff;
+    --second-bg-color: #f1f1f1;
+    --text-color: #071029;
+    --title-text-color:#007bff;
+    --main-color:rgb(207, 226, 255);
+    --shadow-color: #071029;
+  }
+
+/* Aseel -Sponsored bar */
+
+.AS_barSponsors{
+    background-color: var(--title-text-color);
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 3rem;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+
+}
+
+.AS_sponcer{
+    display: flex;
+    flex-direction: column ;
+    width: 10rem;
+    margin: 1rem;
+}
+
+/*  Aseel - Quiz section */
+.AS_quiz{
+    margin-bottom: 3rem;
+}
+.AS_quizContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.AS_QuizThumbnail{
+    background-color: var(--second-bg-color);
+    width: 90%;
+    height: 10rem;
+    border-radius: 15px;
+    margin: 15px;
+
+}
+.AS-QuizTitle{
+    color: var(--title-text-color);
+}
+
+.AS_card {
+    box-shadow: 0 2px 5px 0 var(--shadow-color);
+    transition: 0.3s;
+flex: 1;    
+height: auto;
+    background-color: var(--main-color);
+    margin: 0.5rem;
+    border-radius: 15px;
+    padding: 10px;
+}
+  
+  .AS_card:hover {
+    box-shadow: 0 8px 12px 0 var(--shadow-color);
+  }
+  
+  .AS_container {
+    padding: 2px 16px;
+  }
+
+  #AS_quizBtn{
+    font-weight: bolder;
+    padding: 0.5rem;
+border-radius: 15px;
+border: 2px solid var(--second-bg-color);
+  }
+
+
+  /* Aseel - about us  */
+  .AS_containerAbout {
+    max-width: 99%;
+    margin: 0.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+
+.AS_about-us {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--shadow-color);
+    overflow: hidden;
+}
+
+.AS_image-section {
+    flex: 1;
+    max-width: 50%;
+}
+
+.AS_image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.AS_content-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.AS_content-section h2 {
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+.AS_content-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.AS_content-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.AS_accordion {
+    border-top: 1px solid #ddd;
+}
+
+.AS_accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.AS_accordion-checkbox {
+    display: none;
+}
+
+.AS_accordion-button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--title-text-color);
+}
+
+.AS_accordion-button:hover {
+    background-color: #f1f1f1;
+}
+
+.AS_accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    background-color: var(--second-bg-color);
+}
+
+.AS_accordion-checkbox:checked + .AS_accordion-button + .AS_accordion-content {
+    max-height: 1000px;
+    padding: 15px;
+}
+
+/*Aseel -Contact section */
+
+.AS_containerContact {
+    width: 99%;
+    background-color:var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px var(--shadow-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.5rem;
+}
+
+.AS_contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    min-height: 400px;
+}
+
+.AS_form-container {
+    flex: 2;
+    padding: 30px;
+}
+ .AS_info-container {
+    flex: 1;
+    padding: 30px;
+}
+
+.AS_form-container {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.AS_form-container h2, .AS_form-container h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.AS_contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.AS_form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.AS_form-input, .AS_form-textarea {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.AS_form-input {
+    max-width: 48%;
+}
+
+.AS_form-textarea {
+    max-width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.AS_submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.AS_submit-button:hover {
+    background-color: #0056b3;
+}
+
+.AS_info-container h3 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.AS_info-container p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.AS_info-container strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
